@@ -1,0 +1,12 @@
+[bits 32]
+kmain:
+  mov word [0xb8000], 0x0e48
+  mov word [0xb8002], 0x0e65
+  mov word [0xb8004], 0x0e6c
+  mov word [0xb8006], 0x0e6c
+  mov word [0xb8008], 0x0e6f
+  mov word [0xb800a], 0x0e21
+
+  jmp $
+
+times 512-($-$$) db 0
