@@ -13,6 +13,11 @@ This is a very small example of how to configure a [**GDT**](https://wiki.osdev.
 make && make run
 ```
 
+## Testing on real hardware
+```bash
+dd if=build/cajun.bin of=/dev/<device> bs=1024 count=1
+```
+ 
 ## References
 - https://wiki.osdev.org/Expanded_Main_Page
 - http://vitaly_filatov.tripod.com/ng/asm/asm_001.html
